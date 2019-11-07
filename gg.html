@@ -1,0 +1,19 @@
+<html>
+    <body bgcolor="#ff4d4d"></body>
+	<h2><font size="6" color="white"></h2><center>THE GUESSING GAME</center></font></h2><br>
+    <center><img src="wheel.jpg" alt="Trulli" width="400" height="400"></center><br>
+    <center><button onclick='guessingGame()'> Guessing Game</button></center>
+    <center><p><a href="https://lemire.me/blog/2017/08/22/cracking-random-number-generators-xoroshiro128/"><font color="white">Click here to learn how to break it!</font></a></p></center>
+    <script>
+        function guessingGame() {
+        var guess = prompt("Guess a number \(1-10)..", "insert number here");
+        var number = Math.floor((Math.random() * 10) + 1);
+        if (guess == number) {
+        alert(number+": You won!");
+        } else {
+        alert(number+": Rip, you lost..");
+        }
+    }
+    </script>
+    </body>
+</html>
