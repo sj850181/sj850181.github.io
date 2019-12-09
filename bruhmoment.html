@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center><canvas id="myCanvas" width="1000" height="600" style="border:1px solid #d3d3d3;"></center></canvas><br>
+<center><button onclick="drawface()">Draw the face!</button></center>
+        
+    <script>
+
+    c = document.getElementById("myCanvas");
+    ctx = c.getContext("2d");
+
+    function drawFace1() {
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.rect(50, 100, 300, 100);
+        ctx.stroke();
+        ctx.beginPath();
+    }
+
+    function drawFace2() {
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.rect(50, 200, 300, 100);
+        ctx.stroke();
+        ctx.beginPath();
+    }
+
+    function drawFace3() {
+        ctx.arc(240, 200, 30, 0, 1 * Math.PI);
+        ctx.fillStyle = "black";
+        ctx.fill();
+        ctx.strokeStyle = "black";
+        ctx.stroke();
+        ctx.closePath();
+    }
+
+    function drawFace5() {
+        ctx.beginPath();
+        ctx.rect(550, 200, 300, 100);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.beginPath(); 
+    }
+
+    function drawFace6() {
+        
+        ctx.beginPath();
+        ctx.rect(550, 100, 300, 100);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.beginPath();
+
+    }
+
+    function drawFace7() {
+        ctx.arc(740, 200, 30, 0, 1 * Math.PI);
+        ctx.fillStyle = "black";
+        ctx.fill();
+        ctx.strokeStyle = "black";
+        ctx.stroke();
+        ctx.closePath();
+    }
+
+    function drawFace8() {
+        ctx.beginPath();
+        ctx.rect(100, 400, 100, 100);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.beginPath();
+    }
+
+    function drawFace9() {
+        ctx.beginPath();
+        ctx.rect(200, 400, 100, 100);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.beginPath();
+    }
+
+    function drawFace10() {
+        ctx.beginPath();
+        ctx.rect(300, 400, 100, 100);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.beginPath();
+    }
+
+    function drawFace11() {
+        ctx.beginPath();
+        ctx.rect(400, 400, 100, 100);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.beginPath();
+    }
+
+    function drawFace12() {
+        ctx.beginPath();
+        ctx.fillStyle='gold'
+        ctx.rect(500, 400, 100, 100);
+        ctx.fill();
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.beginPath();
+    }
+
+    function drawFace13() {
+        ctx.beginPath();
+        ctx.rect(600, 400, 100, 100);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.beginPath();
+    }
+
+    function drawFace14() {
+        ctx.beginPath();
+        ctx.rect(700, 400, 100, 100);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.beginPath();
+    }
+
+    function drawface() {
+
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        setTimeout(function(){drawFace1()}, 0); 
+        setTimeout(function(){drawFace2()}, 300); 
+        setTimeout(function(){drawFace3()}, 600); 
+        setTimeout(function(){drawFace4()}, 900); 
+        setTimeout(function(){drawFace5()}, 1200); 
+        setTimeout(function(){drawFace6()}, 1500); 
+        setTimeout(function(){drawFace7()}, 1800); 
+        setTimeout(function(){drawFace8()}, 2100); 
+        setTimeout(function(){drawFace9()}, 2400); 
+        setTimeout(function(){drawFace10()}, 2700); 
+        setTimeout(function(){drawFace11()}, 3000); 
+        setTimeout(function(){drawFace12()}, 3300); 
+        setTimeout(function(){drawFace13()}, 3600); 
+        setTimeout(function(){drawFace14()}, 3900); 
+        
+    }
+
+    function Blank(){
+        ctx.beginPath();
+        ctx.clearRect(0,0,canvas.width,canvas.height)
+    }
+    </script> 
+</body>
+</html>
