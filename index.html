@@ -2,9 +2,43 @@ html>
     <body bgcolor="#000000"></body>
 	<h2><font size="6" color="white"></h2><center>Jonathans homepage</center></font></h2><br>
     <center><img src="matrix-code.jpg" alt="Trulli" width="400" height="300"></center><br>
-    <h2><font size="4" color="white"></h2><center>My creations:</center></font></h2><br></br>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h2>Two Equal Columns</h2>
+
+<div class="row">
+  <div class="column" style="background-color:#000000;">
+    <center><h2><font color="white">My creations:</font></h2></center>
     <center><p><a href="https://sj850181.github.io/gg.html"><font color="white">THE GUESSING GAME</font></a></p></center>
 	<center><p><a href="https://sj850181.github.io/spotify.html"><font color="white">MY FAVORITE PLAYLIST</font></a></p></center>
 	<center><p><a href="https://sj850181.github.io/bruhmoment.html"><font color="white">MY ANIMATION</font></a></p></center>
+  </div>
+  <div class="column" style="background-color:#000000;">
+    <center><h2><font color="white">Cool creations I've found:</font></h2></center>
+    <center><p><a href="https://sj850181.github.io/snake.html"><font color="white">MY ANIMATION</font></a></p></center>
+  </div>
+</div>
 </body>
 </html>
